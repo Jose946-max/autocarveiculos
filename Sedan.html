@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sedan antigo classico - Ficha Técnica</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    .container {
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+      box-shadow: none;
+      border-radius: 0;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .title-block {
+      flex: 1;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #1a202c;
+    }
+    .tag {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: #4f46e5;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 24px;
+      margin-top: 30px;
+      width: 100%;
+    }
+    .photo {
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      width: 100%;
+    }
+    .photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .photo-header {
+      padding: 18px 18px 12px;
+      background: #fff;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .card-tag {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: #4f46e5;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .photo-header h2 {
+      margin: 0;
+      font-size: 1.35rem;
+      color: #111827;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      width: 100%;
+    }
+    .card {
+      background: #fafafa;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.25rem;
+      color: #111827;
+    }
+    h4 {
+      margin: 18px 0 10px;
+      font-size: 1.1rem;
+      color: #1f2937;
+    }
+    .feature-list {
+      margin: 0;
+      padding-left: 20px;
+      color: #374151;
+      line-height: 1.7;
+    }
+    .feature-list li {
+      margin-bottom: 8px;
+    }
+    .info-block {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    }
+    .info-block h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+      color: #111827;
+    }
+    .info-block p {
+      margin: 0 0 18px;
+      line-height: 1.75;
+      color: #4b5563;
+    }
+    .features-block {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    }
+    .features-block h4 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1.1rem;
+      color: #111827;
+    }
+    .card p {
+      margin: 10px 0 0;
+      line-height: 1.65;
+      color: #4b5563;
+    }
+    .tech-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(180px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .tech-item {
+      background: #fff;
+      border: 1px solid #d1d5db;
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .tech-item strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+    .demo {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .demo-section {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 22px;
+    }
+    .demo-section h3 {
+      margin-top: 0;
+      font-size: 1.15rem;
+      color: #111827;
+    }
+    .demo-section ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+      color: #4b5563;
+    }
+    .demo-section li {
+      margin-bottom: 10px;
+    }
+    @media(max-width: 820px) {
+      .hero, .demo {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        padding: 10px;
+      }
+      .hero {
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="title-block">
+        <h1>Sedan Clássico</h1>
+        <span class="tag">Ficha Técnica</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Chevrolet Opala (1968)</h2>
+            </div>
+            <img src="opala1.jpg" alt="Chevrolet Opala 1968" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1968</div>
+              <div class="tech-item"><strong>Motor</strong>4.1 litros, 6 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>140 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 5 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 8 a 10 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Sedan familiar clássico</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Sedan clássico com motor de seis cilindros e forte presença no mercado nacional da época.</p>
+              </div>
+              <div class="features-block">
+                <h4>Características principais</h4>
+                <ul class="feature-list">
+                <li>Design clássico e elegante</li>
+                <li>Motor robusto e confiável</li>
+                <li>Espaço interno confortável</li>
+                <li>Bom desempenho para viagens</li>
+              </ul>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Chevrolet Monza (1982)</h2>
+            </div>
+            <img src="monza1.webp" alt="Chevrolet Monza 1982" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1982</div>
+              <div class="tech-item"><strong>Motor</strong>2.0 litros, 4 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>110 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 5 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 9 a 11 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Sedan esportivo compacto</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Modelo de estilo mais esportivo, com proposta urbana e visual marcante.</p>
+              </div>
+              <div class="features-block">
+                <h4>Características principais</h4>
+                <ul class="feature-list">
+                <li>Visual esportivo e contemporâneo</li>
+                <li>Motor ágil para estradas urbanas</li>
+                <li>Interior confortável para quatro passageiros</li>
+                <li>Boa dirigibilidade e estabilidade</li>
+                </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Volkswagen Santana (1984)</h2>
+            </div>
+            <img src="santana84.jpg" alt="Volkswagen Santana 1984" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1984</div>
+              <div class="tech-item"><strong>Motor</strong>1.6 litros, 4 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>78 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 5 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 10 a 12 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Sedan familiar</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Sedan robusto, com foco em confiabilidade e conforto para uso diário.</p>
+              </div>
+              <div class="features-block">
+                <h4>Características principais</h4>
+                <ul class="feature-list">
+                <li>Construção sólida e durável</li>
+                <li>Conforto reforçado para famílias</li>
+                <li>Baixa manutenção e confiabilidade</li>
+                <li>Ótima estabilidade em rodovias</li>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Volkswagen Voyage (1981)</h2>
+            </div>
+            <img src="voyage81.jpg" alt="Volkswagen Voyage 1981" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1981</div>
+              <div class="tech-item"><strong>Motor</strong>1.3 litros, 4 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>70 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 5 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 10 a 12 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Sedan urbano e econômico</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Modelo simples e prático, conhecido pela economia e pela boa aceitação popular.</p>
+              </div>
+              <div class="features-block">
+                <h4>Características principais</h4>
+                <ul class="feature-list">
+                <li>Fácil manutenção e baixo custo</li>
+                <li>Design funcional e eficiente</li>
+                <li>Economia de combustível</li>
+                <li>Ampla rede de peças de reposição</li>
+             
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Ford Del Rey (1981)</h2>
+            </div>
+            <img src="dellrey81.jpg" alt="Ford Del Rey 1981" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1981</div>
+              <div class="tech-item"><strong>Motor</strong>1.6 litros, 4 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>82 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 5 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 9 a 11 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Sedan compacto</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Versão de entrada da Ford, com proposta confortável e uso familiar.</p>
+              </div>
+              <div class="features-block">
+                <h4>Características principais</h4>
+                <ul class="feature-list">
+                <li>Conforto familiar em um modelo acessível</li>
+                <li>Estabilidade e segurança para o dia a dia</li>
+                <li>Seu espaço interno comporta bem a família</li>
+                <li>Desempenho confiável em trajetos urbanos</li>
+             
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Chevrolet Chevette (1973)</h2>
+            </div>
+            <img src="chevet1.jpg" alt="Chevrolet Chevette 1973" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1973</div>
+              <div class="tech-item"><strong>Motor</strong>1.4 litros, 4 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>70 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 5 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 10 a 13 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Carro urbano econômico</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Carro pequeno, econômico e de grande utilidade para o uso urbano da época.</p>
+              </div>
+              <div class="features-block">
+                <h4>Características principais</h4>
+                <ul class="feature-list">
+                <li>Ótima economia para uso urbano</li>
+                <li>Dimensões compactas e manobrabilidade</li>
+                <li>Design simples e prático</li>
+                <li>Boa aceitação popular</li>
+             
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Ford Corcel (1968)</h2>
+            </div>
+            <img src="corcel1.jpg" alt="Ford Corcel 1968" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1968</div>
+              <div class="tech-item"><strong>Motor</strong>1.3 litros, 4 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>70 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 5 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 9 a 11 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Compacto popular</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Modelo icônico da Ford, com desenho simples e forte presença popular.</p>
+              </div>
+              <div class="features-block">
+                <h4>Características principais</h4>
+                <ul class="feature-list">
+                <li>Presença marcante e estilo reconhecível</li>
+                <li>Manutenção simples e acessível</li>
+                <li>Robustez para uso diário</li>
+                <li>Espaço interno generoso para a categoria</li>
+             
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Chevrolet Vectra (1993)</h2>
+            </div>
+            <img src="vectra93.jpg" alt="Chevrolet Vectra 1993" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1993</div>
+              <div class="tech-item"><strong>Motor</strong>2.0 litros, 4 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>116 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 5 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 9 a 12 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Sedan médio</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Modelo mais moderno da lista, com foco em conforto, espaço e dirigibilidade.</p>
+              </div>
+              <div class="features-block">
+                <h4>Características principais</h4>
+                <ul class="feature-list">
+                <li>Interior espaçoso e confortável</li>
+                <li>Bom equilíbrio entre desempenho e economia</li>
+                <li>Excelente estabilidade em estrada</li>
+                <li>Acabamento mais moderno para a época</li>
+             
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Fiat Tempra (1991)</h2>
+            </div>
+            <img src="tempra91.jpg" alt="Fiat Tempra 1991" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1991</div>
+              <div class="tech-item"><strong>Motor</strong>1.6 litros, 4 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>95 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 5 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 10 a 12 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Sedan compacto familiar</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Modelo de referência na época, com acabamento mais refinado e proposta familiar.</p>
+              </div>
+              <div class="features-block">
+                <h4>Características principais</h4>
+                <ul class="feature-list">
+                <li>Acabamento refinado para sua categoria</li>
+                <li>Bom espaço interno e ergonomia</li>
+                <li>Proposta familiar com conforto adicional</li>
+                <li>Dirigibilidade suave e estável</li>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Chevrolet Omega (1992)</h2>
+            </div>
+            <img src="omega1.jpg" alt="Chevrolet Omega 1992" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1992</div>
+              <div class="tech-item"><strong>Motor</strong>2.2 litros, 4 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>120 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Automática de 5 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 8 a 10 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Sedan executivo</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Modelo executivo com maior presença, espaço interno e proposta mais sofisticada.</p>
+              </div>
+              <div class="features-block">
+                <h4>Características principais</h4>
+                <ul class="feature-list">
+                <li>Design moderno e elegante</li>
+                <li>Motor potente e eficiente</li>
+                <li>Espaço interno generoso</li>
+                <li>Conforto premium para todos os passageiros</li>
+             
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+
