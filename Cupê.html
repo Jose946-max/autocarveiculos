@@ -1,0 +1,521 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fichas Técnicas - Coupês Clássicos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    .container {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 24px;
+      background: #fff;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .title-block {
+      flex: 1;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #1a202c;
+    }
+    .tag {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: #4f46e5;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .card {
+      background: #fafafa;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 22px;
+      margin-bottom: 20px;
+      width: 100%;
+      min-width: 0;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 24px;
+      width: 100%;
+      align-items: start;
+    }
+    .photo {
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      background: #fff;
+    }
+    .photo img {
+      width: 100%;
+      display: block;
+    }
+    .photo-header {
+      padding: 18px;
+      background: #fff;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .card-tag {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #4f46e5;
+      color: #fff;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .photo-header h2 {
+      margin: 0;
+      font-size: 1.35rem;
+      color: #111827;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .info-block,
+    .features-block {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    }
+    .info-block h3,
+    .features-block h4 {
+      margin: 0 0 12px;
+      color: #111827;
+      font-size: 1.15rem;
+    }
+    .info-block p,
+    .features-block p {
+      margin: 0;
+      color: #4b5563;
+      line-height: 1.75;
+    }
+    .feature-list {
+      margin: 0;
+      padding-left: 20px;
+      color: #374151;
+      line-height: 1.7;
+    }
+    .feature-list li {
+      margin-bottom: 10px;
+    }
+    .tech-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(180px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .tech-item {
+      background: #fff;
+      border: 1px solid #d1d5db;
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .tech-item strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+    @media (max-width: 1200px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        padding: 18px;
+      }
+      .tech-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="title-block">
+        <h1>Coupês Clássicos</h1>
+        <span class="tag">Fichas Técnicas</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Ford Mustang (1964)</h2>
+            </div>
+            <img src="mustang64.jpg" alt="Ford Mustang 1964" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1964</div>
+              <div class="tech-item"><strong>Motor</strong>4.7 litros, V8</div>
+              <div class="tech-item"><strong>Potência</strong>164 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 3 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 7 a 9 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Coupê esportivo clássico</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Ícone americano com estilo musculoso e forte presença no segmento de coupês esportivos.</p>
+            </div>
+            <div class="features-block">
+              <h4>Características principais</h4>
+              <ul class="feature-list">
+                <li>Design icônico e atemporal</li>
+                <li>Performance esportiva sólida</li>
+                <li>Boa presença de pista</li>
+                <li>Referência entre os clássicos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Chevrolet Opala SS (1971)</h2>
+            </div>
+            <img src="opala1.jpg" alt="Chevrolet Opala SS 1971" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1971</div>
+              <div class="tech-item"><strong>Motor</strong>4.1 litros, 6 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>180 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 4 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 8 a 10 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Coupê esportivo brasileiro</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Versão esportiva do Opala com visual imponente e desempenho superior para a época.</p>
+            </div>
+            <div class="features-block">
+              <h4>Características principais</h4>
+              <ul class="feature-list">
+                <li>Visual agressivo e imponente</li>
+                <li>Motor robusto e potente</li>
+                <li>Acabamento esportivo</li>
+                <li>Herança clássica brasileira</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Porsche 911 (1964)</h2>
+            </div>
+            <img src="porche911.jpg" alt="Porsche 911 1964" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1964</div>
+              <div class="tech-item"><strong>Motor</strong>2.0 litros, 6 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>130 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 5 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 7 a 9 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Esportivo de alto desempenho</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Modelo alemão de alto desempenho com desenho icônico e excelente dirigibilidade.</p>
+            </div>
+            <div class="features-block">
+              <h4>Características principais</h4>
+              <ul class="feature-list">
+                <li>Dirigibilidade excepcional</li>
+                <li>Acabamento premium</li>
+                <li>Linhas atemporais</li>
+                <li>Reputação esportiva mundial</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Chevrolet Corvette (1958)</h2>
+            </div>
+            <img src="corvett58.jpg" alt="Chevrolet Corvette 1958" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1958</div>
+              <div class="tech-item"><strong>Motor</strong>3.9 litros, 6 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>150 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 3 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 7 a 8 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Coupê esportivo histórico</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Um dos primeiros esportivos americanos com estilo distinto e forte apelo histórico.</p>
+            </div>
+            <div class="features-block">
+              <h4>Características principais</h4>
+              <ul class="feature-list">
+                <li>Visual elegante e exclusivo</li>
+                <li>Patrimônio americano</li>
+                <li>Construção robusta</li>
+                <li>Valor de colecionador</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Ford Maverick GT (1973)</h2>
+            </div>
+            <img src="maverik 68.webp" alt="Ford Maverick GT 1973" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1973</div>
+              <div class="tech-item"><strong>Motor</strong>4.9 litros, V8</div>
+              <div class="tech-item"><strong>Potência</strong>190 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 4 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 7 a 10 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Muscle car</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Modelo norte-americano voltado para quem buscava desempenho e visual forte.</p>
+            </div>
+            <div class="features-block">
+              <h4>Características principais</h4>
+              <ul class="feature-list">
+                <li>Potência elevada</li>
+                <li>Design muscular</li>
+                <li>Desempenho robusto</li>
+                <li>Apelo clássico americano</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Jaguar E-Type (1961)</h2>
+            </div>
+            <img src="jaguar1.webp" alt="Jaguar E-Type 1961" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1961</div>
+              <div class="tech-item"><strong>Motor</strong>3.8 litros, 6 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>265 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 4 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 6 a 8 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Grand tourer clássico</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Elegância britânica com desempenho refinado e linhas extremamente elegantes.</p>
+            </div>
+            <div class="features-block">
+              <h4>Características principais</h4>
+              <ul class="feature-list">
+                <li>Design premiado</li>
+                <li>Performance refinada</li>
+                <li>Acabamento de luxo</li>
+                <li>Alto padrão entre clássicos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Brasinca Uirapuru (1964)</h2>
+            </div>
+            <img src="airapuru.webp" alt="Brasinca Uirapuru 1964" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1964</div>
+              <div class="tech-item"><strong>Motor</strong>1.6 litros, 4 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>90 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 4 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 8 a 10 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Esportivo brasileiro</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Projeto brasileiro de grande personalidade, com cara de esportivo e forte identidade nacional.</p>
+            </div>
+            <div class="features-block">
+              <h4>Características principais</h4>
+              <ul class="feature-list">
+                <li>Traço esportivo único</li>
+                <li>Produção nacional limitada</li>
+                <li>Design marcante</li>
+                <li>Valor de colecionador</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Dodge Charger R/T (1971)</h2>
+            </div>
+            <img src="dog charl.jpg" alt="Dodge Charger R/T 1971" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1971</div>
+              <div class="tech-item"><strong>Motor</strong>7.2 litros, V8</div>
+              <div class="tech-item"><strong>Potência</strong>300 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 3 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 6 a 8 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Muscle car</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Muscle car americano com visual agressivo e alto desempenho.</p>
+            </div>
+            <div class="features-block">
+              <h4>Características principais</h4>
+              <ul class="feature-list">
+                <li>Potência extrema</li>
+                <li>Design musculoso</li>
+                <li>Som marcante</li>
+                <li>Clássico de colecionador</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Chevrolet Chevette (1973)</h2>
+            </div>
+            <img src="chevet1.jpg" alt="Chevrolet Chevette 1973" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1973</div>
+              <div class="tech-item"><strong>Motor</strong>1.4 litros, 4 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>70 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 4 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 10 a 12 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Compacto urbano</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Modelo compacto e prático, ideal para uso urbano e circulação diária.</p>
+            </div>
+            <div class="features-block">
+              <h4>Características principais</h4>
+              <ul class="feature-list">
+                <li>Economia e manutenção simples</li>
+                <li>Compacto e fácil de manobrar</li>
+                <li>Uso urbano eficiente</li>
+                <li>Popular na época</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="hero">
+          <div class="photo">
+            <div class="photo-header">
+              <span class="card-tag">Ficha Técnica</span>
+              <h2>Volkswagen Karmann Ghia (1962)</h2>
+            </div>
+            <img src="karman.webp" alt="Volkswagen Karmann Ghia 1962" />
+            <div class="tech-list">
+              <div class="tech-item"><strong>Ano</strong>1962</div>
+              <div class="tech-item"><strong>Motor</strong>1.2 litros, 4 cilindros</div>
+              <div class="tech-item"><strong>Potência</strong>50 cv</div>
+              <div class="tech-item"><strong>Transmissão</strong>Manual de 4 marchas</div>
+              <div class="tech-item"><strong>Consumo</strong>Aprox. 9 a 11 km/l</div>
+              <div class="tech-item"><strong>Uso</strong>Coupê esportivo estiloso</div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-block">
+              <h3>Visão geral do modelo</h3>
+              <p>Modelo elegante e de personalidade única, muito admirado por colecionadores.</p>
+            </div>
+            <div class="features-block">
+              <h4>Características principais</h4>
+              <ul class="feature-list">
+                <li>Design europeu refinado</li>
+                <li>Linhas suaves e elegantes</li>
+                <li>Peça de coleção</li>
+                <li>Apelo histórico</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
